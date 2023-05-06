@@ -1,0 +1,145 @@
+* {
+  scrollbar-width: thin;
+  scrollbar-color: grey white;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: white;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: grey;
+  border-radius: 20px;
+  border: 3px solid white;
+}
+
+.dashboard {
+  height: 99vh;
+  background-color: #eeeded;
+  -webkit-transition: ease-in-out 0.5s;
+  transition: ease-in-out 0.5s;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 15rem 80rem;
+      grid-template-columns: 15rem 80rem;
+}
+
+.dashboard #menu {
+  width: 15rem;
+  height: 98.7vh;
+  background-color: white;
+}
+
+.dashboard #menu .logo {
+  height: 3rem;
+  width: 5rem;
+  margin-top: 1rem;
+}
+
+.dashboard #menu .mint {
+  font-family: Rocher;
+}
+
+.dashboard #menu .dashTitle {
+  font-family: Rocher;
+  margin-top: 0rem;
+  font-size: 1.3rem;
+  color: grey;
+  letter-spacing: 0.2rem;
+}
+
+.dashboard #menu .items {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  grid-gap: 0.5rem;
+  height: 83%;
+  overflow: scroll;
+  padding: 0.5rem 0.1rem 0.5rem 0.1rem;
+}
+
+.dashboard #menu .items .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 0.5em;
+  background-color: #eeeded;
+  cursor: pointer;
+}
+
+.dashboard #menu .items .box .songImg {
+  height: 3rem;
+  width: 4rem;
+  margin-top: 0.5rem;
+  padding-right: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.dashboard #menu .items .box .span {
+  text-align: center;
+}
+
+.dashboard .menuIcon {
+  height: 2rem;
+  width: 2rem;
+  position: absolute;
+  top: 3vh;
+  left: 4vw;
+  color: black;
+  display: none;
+}
+
+.dashboard #bar {
+  width: 80rem;
+}
+
+.dashboard #bar .searchBar {
+  height: 4rem;
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.dashboard #bar .searchBar .srchBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid grey;
+  border-radius: 1rem;
+}
+
+.dashboard #bar .searchBar .srchBar .srchIcon {
+  height: 1.3rem;
+  width: 1.3rem;
+  margin-top: 0.6em;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+}
+
+.dashboard #bar .searchBar .srch {
+  height: 2.5rem;
+  width: 60rem;
+  border-radius: 1rem;
+  border: none;
+}
+
+.dashboard #bar .searchBar .homeIcon, .dashboard #bar .searchBar .dashIcon, .dashboard #bar .searchBar .notIcon, .dashboard #bar .searchBar .userIcon {
+  height: 1.7rem;
+  width: 1.7rem;
+  margin-left: 2rem;
+  cursor: pointer;
+}
+/*# sourceMappingURL=Dashboard.css.map */

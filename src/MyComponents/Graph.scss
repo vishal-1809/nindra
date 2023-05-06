@@ -1,0 +1,194 @@
+.graph {
+  transition: ease-in-out 0.5s;
+  .name {
+    display: flex;
+    background-color: white;
+    border-radius: 1rem;
+    margin: 0.5rem 2rem 0.5rem 2rem;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.1);
+
+    .img {
+      height: 3rem;
+      width: 4rem;
+      border-radius: 0.5rem;
+    }
+
+    .title,
+    .img {
+      margin: 1rem 0rem 1rem 2rem;
+    }
+
+    .title {
+      display: flex;
+      align-items: center;
+      font-weight: 600;
+    }
+  }
+
+  .twoBox {
+    margin-left: 4rem;
+    margin-right: 4rem;
+    display: grid;
+    grid-template-columns: 70% 28%;
+    grid-gap: 2%;
+
+    .one {
+      display: flex;
+      justify-content: center;
+      align-self: center;
+      background-color: white;
+      height: 18rem;
+      align-items: center;
+      border-radius: 1.5rem;
+      padding: 1rem;
+      box-shadow: 0 30px 60px rgba(0, 0, 0, 0.1);
+    }
+
+    .two {
+      border-radius: 1.5rem;
+      padding: 1rem;
+
+      .box {
+        border-radius: 2rem;
+        background: #fff;
+        width: 300px;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        flex-direction: column;
+        box-shadow: 0 30px 60px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s;
+      }
+      .box .percent {
+        width: 150px;
+        height: 150px;
+        position: relative;
+      }
+      .box .percent svg {
+        width: 150px;
+        height: 150px;
+        position: relative;
+      }
+      .box .percent svg circle {
+        width: 150px;
+        height: 150px;
+        fill: none;
+        stroke-width: 10;
+        stroke: #000;
+        transform: translate(5px, 5px);
+        stroke-dasharray: 440;
+        stroke-dashoffset: 440;
+        stroke-linecap: round;
+      }
+      .box .percent svg circle:nth-child(1) {
+        stroke-dashoffset: 0;
+        stroke: #f3f3f3;
+      }
+      .box .percent svg circle:nth-child(2) {
+        stroke: #03a9f4;
+      }
+      .box .percent .num {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        color: #111;
+      }
+      .box .percent .num h2 {
+        font-size: 48px;
+      }
+      .box .percent .num h2 span {
+        font-size: 24px;
+      }
+      .box .text {
+        padding: 10px 0 0;
+        color: #999;
+        font-weight: 700;
+        letter-spacing: 1px;
+      }
+    }
+  }
+
+  .threeBox {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 1rem;
+    margin-left: 4rem;
+    margin-top: 1rem;
+
+    .dashTitle {
+      font-family: Rocher;
+      font-size: 1.3rem;
+      color: grey;
+      text-align: center;
+      font-weight: bold;
+      letter-spacing: 0.2rem;
+    }
+
+    .ones {
+      background-color: white;
+      height: 13rem;
+      width: 20rem;
+      border-radius: 2rem;
+      box-shadow: 0 30px 60px rgba(0, 0, 0, 0.1);
+
+      .txt {
+        margin-top: 2rem;
+        text-align: center;
+        background-color: rgb(88, 248, 88);
+        color: black;
+        font-weight: bold;
+        padding: 1rem;
+        border-radius: 1rem;
+        width: 5rem;
+        height: 1rem;
+      }
+    }
+
+    .twos {
+      background-color: white;
+      height: 13rem;
+      width: 20rem;
+      border-radius: 2rem;
+      box-shadow: 0 30px 60px rgba(0, 0, 0, 0.1);
+      
+      .txt {
+        margin-top: 2rem;
+        text-align: center;
+        background-color: rgb(255, 255, 0);
+        color: black;
+        font-weight: bold;
+        padding: 1rem;
+        border-radius: 1rem;
+        width: 5rem;
+        height: 1rem;
+      }
+    }
+
+    .threes {
+      background-color: white;
+      height: 13rem;
+      width: 20rem;
+      border-radius: 2rem;
+      box-shadow: 0 30px 60px rgba(0, 0, 0, 0.1);
+
+      .txt {
+        margin-top: 2rem;
+        text-align: center;
+        background-color: #03a9f4;
+        color: black;
+        font-weight: bold;
+        padding: 1rem;
+        border-radius: 1rem;
+        width: 5rem;
+        height: 1rem;
+      }
+    }
+  }
+}
